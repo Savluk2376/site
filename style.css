@@ -1,6 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body{background-color: blue;
-    margin:0;
-    font-family: "Roboto", sans-serif;
-    background-color: rgb(207, 172, 172);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  z-index: 1;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #e3fc03;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  border: 2px solid white;
+  z-index: 0;
+  box-shadow: 0px 0px 10px aliceblue;
+  width: 100%;
+}
+
+.logo img {
+  width: 65px;
+  height: 90px;
+  position: relative;
+}
+
+.logo::before{
+    content: "";
+    width: 31px;
+    height: 95px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    box-shadow: 0px 0px 15px 10px white, inset 0px 0px 15px 10px white;
+    display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+
+nav a {
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1) translateY(-3px);
+  text-shadow: 0px 3px 0px rgb(255, 255, 255),
+    0px 4px 0px rgb(255, 0, 0);
+}
+
+form,
+nav {
+  margin: 0;
+  border-top: 5px solid white;
+  padding: 20px 0px;
+  border-bottom: 5px solid white;
+  box-shadow: 0px 0px 10px aliceblue;
+  border-radius: 50%;
+}
+
+form {
+  padding: 20px 20px;
+}
+
+form input::placeholder {
+  font-weight: 600;
+  color: black;
+}
+
+form input,
+form button, nav a {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+form input {
+  outline: none;
+}
+form button {
+  cursor: pointer;
 }
