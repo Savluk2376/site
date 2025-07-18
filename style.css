@@ -33,16 +33,16 @@ header {
   position: relative;
 }
 
-.logo::before{
-    content: "";
-    width: 31px;
-    height: 95px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0px;
-    left: 12px;
-    box-shadow: 0px 0px 15px 10px white, inset 0px 0px 15px 10px white;
-    display: block;
+.logo::before {
+  content: "";
+  width: 31px;
+  height: 95px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  box-shadow: 0px 0px 15px 10px white, inset 0px 0px 15px 10px white;
+  display: block;
 }
 
 nav {
@@ -83,7 +83,8 @@ form input::placeholder {
 }
 
 form input,
-form button, nav a {
+form button,
+nav a {
   background-color: white;
   color: black;
   font-weight: 600;
@@ -96,4 +97,62 @@ form input {
 }
 form button {
   cursor: pointer;
+}
+
+.home-main,
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.about-us h1 {
+  font-weight: 1600;
+  font-size: 50px;
+  border-bottom: 3px solid black;
+}
+.pink {
+  font-weight: 1000;
+  color: pink;
+  text-shadow: 0px 0px 3px black;
+}
+.features {
+  width: 1400px;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.feature-item div {
+  text-align: center;
+  width: 500px;
+}
+.feature-item img {
+  width: 380px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.pizza_photo{
+  height: 215px;
+}
+
+.order-now-btn {
+  background-color: yellow;
+  border: 3px solid black;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.order-now-btn:hover {
+  transform: translateY(-4px) scale(1.1);
 }
