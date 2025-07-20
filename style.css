@@ -196,7 +196,6 @@ footer {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 20px;
   flex-wrap: wrap;
   align-items: center;
   font-size: 16px;
@@ -208,6 +207,12 @@ footer {
   box-shadow: 0px 0px 5px black;
   cursor: pointer;
   padding: 10px;
+  width: 280px;
+  margin: 20px 5px;
+  transition: 0.3s;
+}
+.pizza-item:hover{
+  transform: scale(1.01) translateY(-3px);
 }
 
 .order-btn {
@@ -221,8 +226,14 @@ footer {
   transition: 0.3s;
 }
 
-.order-btn:hover{
+.order-btn:hover {
   background-color: #fca903;
   color: white;
   text-shadow: 0px 0px 2px black;
+}
+
+.pizza-item img {
+  width: 280px;
+  height: 280px;
+  background-color: white;
 }
