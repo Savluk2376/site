@@ -257,3 +257,10 @@ footer {
   border-radius: 10px;
   box-shadow: 0px 0px 5px black;
 }
+
+.special{
+  color: red;
+  font-weight: 1000;
+  background-color: #e3fc03;
+  border-radius: 20px;
+}
