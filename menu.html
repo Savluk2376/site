@@ -222,5 +222,99 @@
         <p>&copy; 2025 PIZZA TIME. Усі права захищено.</p>
       </div>
     </footer>
+    <div class="modal_window hidden">
+      <div class="modal_container">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <h1>Оформлення замовлення</h1>
+        <div class="modal_container_main">
+          <div class="modal_container_info">
+            <p class="modal_first heading">Контактні дані</p>
+            <form action="" class="contacts">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="*Ваше ім'я"
+              />
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="*Ваш номер телефону"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email, щоб отримати квитанцію"
+              />
+            </form>
+            <p class="modal_second heading">
+              Інформація про доставку
+            </p>
+            <p class="extra_info">
+              Час доставки може бути збільшено, про це Вас повідомить
+              оператор
+            </p>
+            <select id="city" name="city">
+              <option value="kyiv">Київ</option>
+              <option value="dnipro">Дніпро</option>
+              <option value="harkiv">Харків</option>
+              <option value="odessa">Одеса</option>
+            </select>
+            <p class="extra_info">
+              Вірно вказана адреса запорука гарячої піци!
+            </p>
+            <form action="" class="personal">
+              <input
+                type="text"
+                placeholder="*Введіть вулицю доставки"
+                id="street"
+              />
+              <input
+                type="text"
+                placeholder="*№ будинку"
+                id="home_number"
+              />
+              <div class="small-inputs">
+                <input
+                  type="text"
+                  placeholder="Під'їзд"
+                  id="pidizd"
+                />
+                <input
+                  type="text"
+                  placeholder="Квартира"
+                  id="flat_number"
+                />
+                <input type="text" placeholder="Поверх" id="floor" />
+                <input
+                  type="text"
+                  placeholder="Домофон"
+                  id="domofon"
+                />
+              </div>
+              <div class="delivery-options">
+                <label>
+                  <input type="radio" name="time" checked />
+                  Якомога швидше
+                </label>
+                <label>
+                  <input type="radio" name="time" />
+                  На час
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="order_info">
+            <img src="" alt="order-image" class="order-image" />
+            <p class="order-description"></p>
+            <p class="order-price"></p>
+            <button class="submit-order-btn">Замовити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
